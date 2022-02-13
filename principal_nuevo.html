@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/custom.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <title>DASHBOARD - Gestión de usuarios</title>
+</head>
+
+<body>
+    <div class="d-flex">
+        <div class="wrapper">
+            <!-- Menú lateral -->
+            <nav id="sidebar" aria-expanded="true">
+                <div class="sidebar-heading text-center primary-text fs-4 fw-bold py-4">
+                    E-SHOP OUTLET
+                </div>
+                <div class="list-group list-group-flush">
+                    <a href="#" class="list-group-item list-group-item-action  butt bg-primary second-text d-inline-flex active">
+                        <img class="imgmenu" src="./img/speedometer2.svg"> Dashboard </a>
+                    <a href="#" class="list-group-item list-group-item-action butt bg-transparent second-text fw-bold d-inline-flex">
+                        <img class="imgmenu" src="./img/person-fill.svg"> Usuarios </a>
+                    <a href="#" class="list-group-item list-group-item-action butt bg-transparent second-text fw-bold d-inline-flex">
+                        <img class="imgmenu" src="./img/basket-fill.svg"> Productos </a>
+                    <a href="#" class="list-group-item list-group-item-action butt bg-transparent second-text fw-bold d-inline-flex">
+                        <img class="imgmenu" src="./img/bar-chart-line-fill.svg"> Graficos </a>
+                    <a href="#" class="list-group-item list-group-item-action butt bg-transparent second-text fw-bold d-inline-flex">
+                        <img class="imgmenu" src="./img/file-text-fill.svg"> Informes </a>
+                    <a href="#" class="list-group-item list-group-item-action butt bg-warning second-text fw-bold d-inline-flex">
+                        <img class="imgmenu" src="./img/box-arrow-left.svg"> Cerrar sesión </a>
+                </div>
+            </nav>
+
+            <!-- Principal -->
+            <div id="main-page" class="container-fluid vh-100">
+
+                <!-- Botón open menú -->
+                <div id="desplegableYtitulo" class="pt-3">
+                    <a class="btn btn-light" id="sidebarCollapse">
+                        <img class="pb-2" width="30" src="./img/list.svg">
+                    </a>
+                    <h2 class="d-inline-block">
+                        Dashboard
+                    </h2>
+                </div>
+
+                <!-- Resumen I-G-B -->
+                <div class="row">
+                    <div class="card shadow m-3 callout-info col-md-4">
+                        <div class="card-body text-center">
+                            <p class="fw-bold text-info">Ingresos (Anual)</p>
+                            <h3>1300,00 €</h3>
+                        </div>
+                    </div>
+                    <div class="card shadow m-3 callout-primary col-md-4">
+                        <div class="card-body text-center">
+                            <p class="fw-bold text-primary">Gastos (Anual)</p>
+                            <h3>900,00 €</h3>
+                        </div>
+                    </div>
+                    <div class="card shadow m-3 callout-success col-md-4">
+                        <div class="card-body text-center">
+                            <p class="fw-bold text-success">Beneficios (Anual)</p>
+                            <h3>400,00 €</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Tabla Productos -->
+                <div id="tablaProductos">
+                    <h2 id="productos" class="my-3">
+                        Productos
+                    </h2>
+                    <div id="containerTabla" class="card shadow">
+                        <div class="card-header" id="soldmore">
+                            <p class="fw-bold">Productos más vendidos</p>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-hover table-striped table-sm">
+                                <thead>
+                                    <th class="d-none d-md-block">IMAGEN</th>
+                                    <th>VENTAS</th>
+                                    <th class="d-none d-md-block">CÓDIGO</th>
+                                    <th>PRODUCTO</th>
+                                    <th class="d-none d-md-block">PRECIO UNIDAD</th>
+                                    <th>CATEGORÍA</th>
+                                </thead>
+
+                                <tbody>
+                                    <tr class="align-middle">
+                                        <td class="d-none d-md-block"><img src="./img/xiaomi.png" alt="Xiaomi Redmi Note 9 Pro 6/64GB Verde Tropical"></td>
+                                        <td class="text-center">1232</td>
+                                        <td class="d-none d-md-block">299423</td>
+                                        <td>Xiaomi Redmi Note 9 Pro 6/64GB Verde Tropical</td>
+                                        <td class="d-none d-md-block">250,25 €</td>
+                                        <td><span class="btn btn-info rounded-pill">Smartphone</span></td>
+                                    </tr>
+                                    <tr class="align-middle">
+                                        <td class="d-none d-md-block"><img src="./img/pantalla.png" alt="NewSkill Icarus RGB 27 LED Fast IPS QHD 180Hz G-Sync Compatible"></td>
+                                        <td class="text-center">1000</td>
+                                        <td class="d-none d-md-block">414013</td>
+                                        <td>NewSkill Icarus RGB 27" LED Fast IPS QHD 180Hz G-Sync Compatible</td>
+                                        <td class="d-none d-md-block">343,98 €</td>
+                                        <td><span class="btn btn-info rounded-pill">Monitores</span></td>
+                                    </tr>
+                                    <tr class="align-middle">
+                                        <td class="d-none d-md-block"><img src="./img/mouse.png" alt="Tempest X20W Vigilant Raton Gaming Inalámbrico"></td>
+                                        <td class="text-center">855</td>
+                                        <td class="d-none d-md-block">433507</td>
+                                        <td>Tempest X20W Vigilant Raton Gaming Inalámbrico</td>
+                                        <td class="d-none d-md-block">49,99 €</td>
+                                        <td><span class="btn btn-info rounded-pill">Periféricos</span></td>
+                                    </tr>
+                                    <tr class="align-middle">
+                                        <td class="d-none d-md-block"><img src="./img/webcam.png" alt="Logitech C920s Pro Webcam"></td>
+                                        <td class="text-center">711</td>
+                                        <td class="d-none d-md-block">258324</td>
+                                        <td>Logitech C920s Pro Webcam</td>
+                                        <td class="d-none d-md-block">75,99 €</td>
+                                        <td><span class="btn btn-info rounded-pill">Periféricos</span></td>
+                                    </tr>
+                                    <tr class="align-middle">
+                                        <td class="d-none d-md-block"><img src="./img/torre.png" alt="Tempest Vapor USB 3.0 Ventana RGB Negro"></td>
+                                        <td class="text-center">425</td>
+                                        <td class="d-none d-md-block">386825</td>
+                                        <td>Tempest Vapor USB 3.0 Ventana RGB Negro</td>
+                                        <td class="d-none d-md-block">56,99 €</td>
+                                        <td><span class="btn btn-info rounded-pill">Componentes</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Scrip de javascript para que al pulsar el botón del menú, se descubra -->
+    <script>
+        document.getElementById('sidebarCollapse').onclick = funcion;
+
+        function funcion() {
+            document.getElementById('sidebar').classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>
